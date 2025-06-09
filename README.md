@@ -73,14 +73,14 @@ server {
 
 Redémarrez et activez le site : 
 
-````bash
+```bash
 ln -s /etc/nginx/sites-available/n8n /etc/nginx/sites-enabled/
 nginx -t && systemctl restart nginx
 ```
 
 ### 6. Obtention certificat https avec Certbot
 
-````bash
+```bash
 apt install certbot python3-certbot-nginx -y
 certbot --nginx -d n8n.example.com
 ```
